@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.adatb.view.controller.AdminWindowController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="5.0" layoutY="7.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="15.0">
+         <left>
+            <VBox prefHeight="432.0" prefWidth="116.0" style="-fx-background-color: rgba(2,29,47,0.51);" BorderPane.alignment="CENTER">
+               <children>
+                  <Button focusTraversable="false" mnemonicParsing="false" onAction="#navigateUserPage" text="Felhasználói felület" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#getPlaneScreen" prefHeight="50.0" prefWidth="100.0" text="Repülőgép">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#getAirportScreen" prefHeight="50.0" prefWidth="100.0" text="Repülőtér">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#getAlertScreen" prefHeight="50.0" prefWidth="100.0" text="Figyelmeztetés">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#getCityScreen" prefHeight="50.0" prefWidth="100.0" text="Város">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+
+                  <Button mnemonicParsing="false" onAction="#getHotelScreen" prefHeight="50.0" prefWidth="100.0" text="Szálloda">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#getJaratokScreen" prefHeight="50.0" prefWidth="100.0" text="Járatok">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#regAdmin" prefHeight="50.0" prefWidth="100.0" text="Admin regisztráció" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="100.0" text="Kijelentkezés">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left></BorderPane>
+   </children>
+</AnchorPane>

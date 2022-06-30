@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.adatb.view.controller.FlightListController">
+   <children>
+      <GridPane layoutX="41.0" layoutY="16.0" prefHeight="34.0" prefWidth="1000.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" minHeight="2.0" prefHeight="10.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="fromAirport" prefHeight="25.0" prefWidth="200.0" promptText="Honnan?">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <ComboBox fx:id="toAirport" prefHeight="25.0" prefWidth="200.0" promptText="Hova?" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" text="Keresés" GridPane.columnIndex="4" />
+            <DatePicker fx:id="dateBegin" editable="false" prefHeight="25.0" prefWidth="200.0" promptText="Kezdet" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <DatePicker fx:id="dateEnd" prefHeight="25.0" prefWidth="200.0" promptText="Vég" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </DatePicker>
+         </children>
+      </GridPane>
+      <TableView fx:id="table" layoutX="421.0" layoutY="65.0" prefHeight="335.0" prefWidth="1040.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="fromCol" prefWidth="235.0" text="Honnan" />
+          <TableColumn fx:id="toCol" prefWidth="235.0" text="Hova" />
+          <TableColumn fx:id="whenCol" prefWidth="155.0" text="Indulási idő" />
+          <TableColumn fx:id="timeCol" prefWidth="120.0" text="Menetidő" />
+          <TableColumn fx:id="withCol" prefWidth="170.0" text="Repülőgép" />
+          <TableColumn fx:id="seatCol" prefWidth="100.0" text="Szabad helyek" />
+          <TableColumn fx:id="hotelCol" prefWidth="200.0" text="Szállodák" />
+          <TableColumn fx:id="actionCol" prefWidth="100.0" sortable="false" text="Foglalás" />
+        </columns>
+      </TableView>
+      <Label fx:id="infoText" layoutX="403.0" layoutY="125.0" text="Állítsd be a szűrőket">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

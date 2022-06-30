@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.adatb.view.controller.OwnFlightController">
+   <children>
+      <TableView fx:id="table" layoutX="200.0" layoutY="91.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="fromCol" prefWidth="99.0" text="Honnan" />
+          <TableColumn fx:id="toCol" prefWidth="107.0" text="Hova" />
+            <TableColumn fx:id="whenCol" prefWidth="118.0" text="Indulási idő" />
+            <TableColumn fx:id="timeCol" prefWidth="87.0" text="Menetidő" />
+            <TableColumn fx:id="withCol" prefWidth="109.0" text="Repülőgép" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
