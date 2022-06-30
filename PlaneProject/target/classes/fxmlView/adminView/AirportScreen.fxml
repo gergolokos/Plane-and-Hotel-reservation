@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="642.0" prefWidth="1142.0" style="-fx-background-color: rgba(116,163,193,0.51);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.adatb.view.controller.AirportWindowController">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="160.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAirport" text="Repülőtér hozzáadás" />
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutY="27.0" prefHeight="317.0" prefWidth="920.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="182.0" text="Név" />
+            <TableColumn fx:id="latitudeCol" prefWidth="186.0" text="Szélesség" />
+            <TableColumn fx:id="longitudeCol" prefWidth="186.0" text="Hosszúság" />
+            <TableColumn fx:id="cityCol" prefWidth="186.0" text="Város" />
+            <TableColumn fx:id="actionsCol" prefWidth="186.0" text="Műveletek" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
